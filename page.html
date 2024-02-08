@@ -56,28 +56,32 @@
     </div>
     
     <div class="cont" id="contact">
-        <div>
-            <div>
-                <p>Mande uma mensagem:</p>
-            </div>
-            <div>
+        <div class="filhas">
+             <div>
                 <div>
-                    <label for="nome">NOME:</label>
-                    <input type="text" id="nome">
+                    <p>Mande uma mensagem:</p>
                 </div>
                 <div>
-                    <label for="mensagem">MENSAGEM:</label>
-                    <textarea type="text" id="mensagem"></textarea>
+                    <div>
+                        <label for="nome">NOME:</label>
+                        <input type="text" id="nome">
+                    </div>
+                    <div>
+                        <label for="mensagem">MENSAGEM:</label>
+                        <textarea type="text" id="mensagem"></textarea>
+                    </div>
                 </div>
+                <button onclick="Conferir()">CONFERIR DADOS</button>
             </div>
-            <button onclick="Conferir()">CONFERIR DADOS</button>
         </div>
         <div>
-            <div>
-            <p>NOME: <span id="ConfirmeNome"></span></p>
-            <p>MENSAGEM: <span id="ConfirmeMens"></span></p>
-        </div>
-            <button onclick="enviar()">ZAP</button>
+            <div class="filhas">
+                 <div>
+                    <p>NOME: <span id="ConfirmeNome"></span></p>
+                    <p>MENSAGEM: <span id="ConfirmeMens"></span></p>
+                </div>
+                <button onclick="enviar()">ZAP</button>
+            </div>
         </div>
     </div>
 
