@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#perfil01">PERFIL 01</a></li>
+            <li><a href="#perfil02">PERFIL 02</a></li>
+            <li><a href="#tecnologia">TECNOLOGIAS</a></li>
+            <li><a href="#contact">CONTATOS</a></li>
+        </ul>
+    </header>
+
+    <div class="perfil01" id="perfil01">
+        <div>
+            <div class="rel">
+                <img
+                  class="img01" 
+                  src="https://s2.glbimg.com/xTcuoPV8tzybQaqQfKpaBeb67YM=/0x0:1400x1016/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2023/A/m/o5rx9YSfy3kw0R0l51Ig/felca-1-.jpg"
+                  alt="Felca">
+            </div>
+        </div>
+        <div class="filhas">
+            <h2>FELCA</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum in dolorum rerum amet atque sequi error ab neque vel non?</p>
+        </div>
+    </div>
+
+    <div class="perfil02" id="perfil02">
+        <div>
+            <div class="rel">
+                <img
+                  class="img02" 
+                  src="https://i.pinimg.com/474x/d4/2c/d3/d42cd33cf3ab822ab2c2913cf8a1e864.jpg"
+                  alt="Cellbit">
+            </div>
+        </div>
+        <div class="filhas">
+            <h2>CELLBIT</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum in dolorum rerum amet atque sequi error ab neque vel non?</p>
+        </div>
+    </div>
+
+    <div class="tec" id="tecnologia">
+    </div>
+    
+    <div class="cont" id="contact">
+        <div>
+            <div>
+                <p>Mande uma mensagem:</p>
+            </div>
+            <div>
+                <div>
+                    <label for="nome">NOME:</label>
+                    <input type="text" id="nome">
+                </div>
+                <div>
+                    <label for="mensagem">MENSAGEM:</label>
+                    <textarea type="text" id="mensagem"></textarea>
+                </div>
+            </div>
+            <button onclick="Conferir()">CONFERIR DADOS</button>
+        </div>
+        <div>
+            <div>
+            <p>NOME: <span id="ConfirmeNome"></span></p>
+            <p>MENSAGEM: <span id="ConfirmeMens"></span></p>
+        </div>
+            <button onclick="enviar()">ZAP</button>
+        </div>
+    </div>
+
+</body>
+</html>
