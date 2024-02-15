@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script src="script.js"></script>
-
 </head>
 <body>
     <header>
@@ -21,69 +20,112 @@
             <li><a href="#contact">CONTATOS</a></li>
         </ul>
     </header>
-
+    
     <div class="perfil01" id="perfil01">
         <div>
-            <div class="rel">
+            <div class="rel" >
                 <img
-                  class="img01" 
-                  src="https://s2.glbimg.com/xTcuoPV8tzybQaqQfKpaBeb67YM=/0x0:1400x1016/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2023/A/m/o5rx9YSfy3kw0R0l51Ig/felca-1-.jpg"
-                  alt="Felca">
+                    class="img01" 
+                    src="https://s2.glbimg.com/xTcuoPV8tzybQaqQfKpaBeb67YM=/0x0:1400x1016/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2023/A/m/o5rx9YSfy3kw0R0l51Ig/felca-1-.jpg"
+                    alt="Felca">
+                <div class="img01 circle"></div>
             </div>
         </div>
-        <div class="filhas">
+        <div class="filhas2">
             <h2>FELCA</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum in dolorum rerum amet atque sequi error ab neque vel non?</p>
         </div>
     </div>
-
+    
     <div class="perfil02" id="perfil02">
         <div>
             <div class="rel">
+                <div class="img02 circle"></div>
                 <img
-                  class="img02" 
-                  src="https://i.pinimg.com/474x/d4/2c/d3/d42cd33cf3ab822ab2c2913cf8a1e864.jpg"
-                  alt="Cellbit">
+                    class="img02" 
+                    src="https://i.pinimg.com/474x/d4/2c/d3/d42cd33cf3ab822ab2c2913cf8a1e864.jpg"
+                    alt="Cellbit">
+                <div class="img02 circle"></div>
             </div>
         </div>
-        <div class="filhas">
+        <div class="filhas2">
             <h2>CELLBIT</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum in dolorum rerum amet atque sequi error ab neque vel non?</p>
         </div>
     </div>
-
+    
     <div class="tec" id="tecnologia">
+        <div class="item">
+            <div class="img-container">
+                <img class="logo-img img03" src="https://i.pinimg.com/originals/29/dc/03/29dc0325d95ec94b5861f72fce663141.jpg" alt="Logo 3">
+            </div>
+            <div class="filhas3">
+                <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum in dolorum rerum amet atque sequi error ab neque vel non?</p>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="img-container">
+                <img class="logo-img img04" src="https://i.pinimg.com/originals/29/dc/03/29dc0325d95ec94b5861f72fce663141.jpg" alt="Logo 3">
+            </div>
+            <div class="filhas3">
+                <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum in dolorum rerum amet atque sequi error ab neque vel non?</p>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="img-container">
+                <img class="logo-img img05" src="https://i.pinimg.com/originals/29/dc/03/29dc0325d95ec94b5861f72fce663141.jpg" alt="Logo 3">
+            </div>
+            <div class="filhas3">
+                <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum in dolorum rerum amet atque sequi error ab neque vel non?</p>
+            </div>
+        </div>
     </div>
+    
     
     <div class="cont" id="contact">
         <div class="filhas">
-             <div>
+            <div>
                 <div>
-                    <p>Mande uma mensagem:</p>
+                    <p class="negrito">MANDE UMA MENSAGEM:</p>
                 </div>
                 <div>
-                    <div>
-                        <label for="nome">NOME:</label>
+                    <div class="input-container">
+                        <label for="nome" class="label-left">NOME:</label>
                         <input type="text" id="nome">
                     </div>
-                    <div>
-                        <label for="mensagem">MENSAGEM:</label>
+                    <div class="input-container">
+                        <label for="mensagem" class="label-left">MENSAGEM:</label>
                         <textarea type="text" id="mensagem"></textarea>
                     </div>
                 </div>
-                <button onclick="Conferir()">CONFERIR DADOS</button>
             </div>
+            <button onclick="Conferir()">CONFERIR DADOS</button>
         </div>
+        
         <div>
             <div class="filhas">
-                 <div>
-                    <p>NOME: <span id="ConfirmeNome"></span></p>
-                    <p>MENSAGEM: <span id="ConfirmeMens"></span></p>
+                <div>
+                    <div>
+                        <p class="negrito">CONFIRMAÇÃO DE DADOS:</p>
+                    </div>
+                    <div class="input-container">
+                        <label class="label-left confirm-label">NOME: </label>
+                        <input type="text" id="ConfirmeNome" readonly>
+                    </div>
+                    <div class="input-container">
+                        <label class="label-left confirm-label">MENSAGEM: </label>
+                        <textarea type="text" id="ConfirmeMens" readonly></textarea>
+                    </div>
                 </div>
                 <button onclick="enviar()">ZAP</button>
             </div>
         </div>
+        <button class="limpar-button" onclick="limpar()">LIMPAR</button>
     </div>
-
 </body>
 </html>
