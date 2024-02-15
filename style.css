@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: "Open Sans";
+    font-family: 'Dancing Script', cursive;
 }
 
 body {
@@ -20,6 +20,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1000;
 }
 
 ul {
@@ -30,6 +31,8 @@ ul {
     list-style: none;
     padding-top: 6px;
     margin: 0;
+    z-index: 1;
+
 }
 
 a {
@@ -139,7 +142,7 @@ a:hover {
 .filhas,
 .filhas2,
 .filhas3 {
-    font-family: "Open Sans";
+    font-family: 'Dancing Script', cursive;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -148,19 +151,14 @@ a:hover {
     height: 300px;
     width: 400px;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
 
-}
-
-
-.filhas3 {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px;
 }
 
 .filhas{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -175,7 +173,7 @@ button {
     font-weight: 900;
     margin-top: auto;
     width: auto;
-    font-family: "Open Sans";
+    font-family: 'Dancing Script', cursive;
   
 }
 
