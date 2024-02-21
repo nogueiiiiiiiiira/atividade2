@@ -68,23 +68,23 @@ a:hover {
 }
 
 .perfil01 {
-    background: linear-gradient(to bottom, #3498db, #2980b9);
+    background: #2980b9;
     color: #fff;
 }
 
 .perfil02 {
-    background: linear-gradient(to bottom, #2ecc71, #27ae60);
+    background:#27ae60;
     color: #fff;
     flex-direction: row-reverse;
 }
 
 .tec {
-    background: linear-gradient(to bottom, #e67e22, #d35400);
+    background:#d35400;
     color: #fff;
 }
 
 .cont {
-    background: linear-gradient(to bottom, #999999, #7f8c8d);
+    background:#7f8c8d;
     color: #fff;
 }
 
@@ -103,8 +103,7 @@ a:hover {
     width: 350px;
     height: 350px;
     transition: transform 0.3s ease-in-out;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px;
     box-sizing: border-box;
 }
 
@@ -123,8 +122,7 @@ a:hover {
     width: 350px;
     height: 350px;
     transition: transform 0.3s ease-in-out;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px;
     box-sizing: border-box;
 }
 
@@ -238,13 +236,6 @@ h2 {
     font-family: "Segoe UI";
 }
 
-input,
-textarea {
-    font-family: "Open Sans";
-    font-size: 18px;
-}
-
-
 .logo-img {
     width: 100px;
     height: 100px;
@@ -257,8 +248,6 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: left;
-    gap: 30px;
 }
 
 .img-container {
@@ -266,7 +255,7 @@ textarea {
     justify-content: center;
     align-items: center;
     border: 5px solid black;
-    border-radius: 15px;
+    border-radius: 80px;
     width: 150px; 
     height: 150px;
     overflow: hidden;
