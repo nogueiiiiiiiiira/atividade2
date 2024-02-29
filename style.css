@@ -121,7 +121,7 @@ a:hover {
     position: relative;
     width: 350px;
     height: 350px;
-    transition: transform 0.3s ease-in-out;
+    transition: ease-in-out;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px;
     box-sizing: border-box;
 }
