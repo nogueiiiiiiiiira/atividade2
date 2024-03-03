@@ -176,12 +176,6 @@ button {
   
 }
 
-.limpar-button {
-    bottom: 20px;
-    transform: translateX(-550%);
-    display: flex;
-    align-items: center;
-}
 
 button:hover {
     transition: all 200ms linear;
@@ -265,4 +259,93 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.row{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+
+    .img03,
+    .img04,
+    .img05 {
+        width: 100%;
+        height: auto;
+    }
+
+    .rel,
+    .img01,
+    .img02
+    {
+        width: 150px;
+        height: 150px;
+    }
+
+    a {
+        font-size: 14px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cont div {
+        margin-right: 0;
+    }
+
+    .label-left {
+        margin-right: 0;
+    }
+
+    .tec,
+    .cont,
+    .perfil01,
+    .perfil02 {
+        height: auto;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    
+    .cont{
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .limpar-button {
+        margin-top: 30px;
+    }
+
+    .filhas{
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .tec .row {
+        flex-direction: row;
+    }
+
+    .cont .row{
+        flex-direction: row;
+    }
+
+    .filhas{
+        margin: 20px;
+    }
+
+    .limpar-button {
+        transform: translateX(-590%);
+        display: flex;
+        align-items: center;
+        margin-top: 540px;
+    }
+
 }
